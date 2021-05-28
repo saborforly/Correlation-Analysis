@@ -1,0 +1,7 @@
+0       /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+1       /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+2       /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+3       /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+4       /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/4_OEC.root
+5       /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/5_OEC.root
+6       /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/6_OEC.root

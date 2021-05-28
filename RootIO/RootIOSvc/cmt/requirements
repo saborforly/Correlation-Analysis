@@ -1,0 +1,15 @@
+package RootIOSvc
+
+use SniperKernel v*
+use Boost v* Externals
+use RootIOUtil v* RootIO
+use ROOT v* Externals
+use EDMUtil v* DataModel
+use JunoTimer v* Utilities
+
+apply_pattern install_more_includes more=RootIOSvc
+apply_pattern install_python_modules
+
+library RootIOSvc *.cc
+apply_pattern linker_library library=RootIOSvc
+

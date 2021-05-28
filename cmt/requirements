@@ -1,0 +1,15 @@
+package cor-ana
+
+#use EvtConfig v* EvtProcessor
+#use EvtSteering v* EvtProcessor
+#use EvtStore v* EvtUtilities
+#use EvtResult v* EvtProcessor
+#use RecCdMuonAlg v*
+use OECEvent v*
+use TagAna v* Tag
+use TagSelect v* Tag
+use TagIO v* Tag
+use SniperMuster v* Tag
+use MtIOExample v* Tag
+#use OECConfigSvc v* OECConfig
+#use TestForConfig v* OECConfig

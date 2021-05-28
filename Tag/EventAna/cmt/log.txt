@@ -1,0 +1,784 @@
+('sel', 3)
+('ana', 3)
+**************************************************
+***          Welcome to SNiPER Python          ***
+**************************************************
+Running @ lxslc714.ihep.ac.cn on Wed Mar 17 16:52:44 2021
+SNiPER:Muster.configSelect     DEBUG: Muster Tasks input One
+[Task]1-TagSelect
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 0
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 0
+   +--[SelectInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[SelectMemMgr]SelectMemMgr
+   |     +--[Var]LogLevel   = 0
+   +--[FirstFilterAlg]FirstFilterAlg
+   |     +--[Var]LogLevel   = 0
+SNiPER:Muster.configSelect     DEBUG: Muster Tasks input One
+[Task]2-TagSelect
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 0
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 0
+   +--[SelectInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[SelectMemMgr]SelectMemMgr
+   |     +--[Var]LogLevel   = 0
+   +--[FirstFilterAlg]FirstFilterAlg
+   |     +--[Var]LogLevel   = 0
+SNiPER:Muster.configSelect     DEBUG: Muster Tasks input One
+[Task]3-TagSelect
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 0
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 0
+   +--[SelectInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[SelectMemMgr]SelectMemMgr
+   |     +--[Var]LogLevel   = 0
+   +--[FirstFilterAlg]FirstFilterAlg
+   |     +--[Var]LogLevel   = 0
+SNiPER:Muster.configAna        DEBUG: Muster Tasks input two
+[Task]1-TagAna
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 0
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 0
+   +--[TagWinMemMgr]TagWinMemMgr
+   |     +--[Var]LogLevel   = 0
+   +--[WinInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[WinOutputSvc]OutputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[TagAnaEvent]TagAnaEvent
+   |     +--[Var]LogLevel   = 0
+SNiPER:Muster.configAna        DEBUG: Muster Tasks input two
+[Task]2-TagAna
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 0
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 0
+   +--[TagWinMemMgr]TagWinMemMgr
+   |     +--[Var]LogLevel   = 0
+   +--[WinInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[WinOutputSvc]OutputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[TagAnaEvent]TagAnaEvent
+   |     +--[Var]LogLevel   = 0
+SNiPER:Muster.configAna        DEBUG: Muster Tasks input two
+[Task]3-TagAna
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 0
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 0
+   +--[TagWinMemMgr]TagWinMemMgr
+   |     +--[Var]LogLevel   = 0
+   +--[WinInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[WinOutputSvc]OutputSvc
+   |     +--[Var]LogLevel   = 0
+   +--[TagAnaEvent]TagAnaEvent
+   |     +--[Var]LogLevel   = 0
+[Task]TagReader
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 0
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 0
+   +--[TagReaderMemMgr]TagReaderMemMgr
+   |     +--[Var]LogLevel   = 0
+   |     +--[Var]pathFile   = /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/testFileId.txt
+   |     +--[Var]tagFile    = /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/testTag.txt
+[Task]TagIO
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 0
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 0
+   +--[TagIOMemMgr]TagIOMemMgr
+   |     +--[Var]LogLevel   = 0
+   |     +--[Var]TimeWindow = [-1.1, 1.1]
+SNiPER:Muster.run              DEBUG: totally open 6 std::threads
+SNiPER:TaskSupervisor.execute  DEBUG:  children size = 3
+SNiPER:TaskSupervisor.execute  DEBUG:  children size = 3
+TagWriter.initialize            INFO: initialized
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = -1 +++
+1-TagSelect:SelectMemMgr.initialize DEBUG: ### TagSelectSvc SelectMemMgr initialize ###
+3-TagSelect:SelectMemMgr.initialize DEBUG: ### TagSelectSvc SelectMemMgr initialize ###
+SNiPER:NonDLE.BeginSelectHdl   DEBUG: ### TagSelectSvc BeginSelectHdl initialize ###
+SNiPER:NonDLE.BeginSelectHdl   DEBUG: ### TagSelectSvc BeginSelectHdl initialize ###
+1-TagSelect:FirstFilterAlg.initialize DEBUG: ### TagSelectSvc FirstFilterAlg::initialize ###
+3-TagSelect:FirstFilterAlg.initialize DEBUG: ### TagSelectSvc FirstFilterAlg::initialize ###
+2-TagSelect:SelectMemMgr.initialize DEBUG: ### TagSelectSvc SelectMemMgr initialize ###
+SNiPER:NonDLE.BeginIOHdl        INFO: --- IO init evtHdl ---
+3-TagSelect.initialize          INFO: initialized
+SNiPER:NonDLE.BeginSelectHdl   DEBUG: ### TagSelectSvc BeginSelectHdl initialize ###
+1-TagSelect.initialize          INFO: initialized
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+2-TagSelect:FirstFilterAlg.initialize DEBUG: ### TagSelectSvc FirstFilterAlg::initialize ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+TagIO:TagIOMemMgr.initialize   DEBUG: --- TagIOSvc TagIOMemMgr::initialize success ---
+2-TagSelect.initialize          INFO: initialized
+1-TagAna:TagWinMemMgr.initialize DEBUG: --- TagIOSvc TagWinMemMgr::initialize success ---
+2-TagAna:TagWinMemMgr.initialize DEBUG: --- TagIOSvc TagWinMemMgr::initialize success ---
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+TagIO.initialize                INFO: initialized
+3-TagAna:TagWinMemMgr.initialize DEBUG: --- TagIOSvc TagWinMemMgr::initialize success ---
+SNiPER:NonDLE.handle           DEBUG: --- IO begin handle ---
+1-TagAna:TagAnaEvent.initialize DEBUG: !!! TagAnaEvent initialized successfully !!!
+2-TagAna:TagAnaEvent.initialize DEBUG: !!! TagAnaEvent initialized successfully !!!
+3-TagAna:TagAnaEvent.initialize DEBUG: !!! TagAnaEvent initialized successfully !!!
+1-TagAna.initialize             INFO: initialized
+2-TagAna.initialize             INFO: initialized
+3-TagAna.initialize             INFO: initialized
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.BeginReaderHdl   DEBUG: ^^^ BeginReaderHdl id-path = 0-/junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NonDLE.BeginReaderHdl   DEBUG: ^^^ BeginReaderHdl id-path = 1-/junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.BeginReaderHdl   DEBUG: ^^^ BeginReaderHdl id-path = 2-/junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.BeginReaderHdl   DEBUG: ^^^ BeginReaderHdl id-path = 3-/junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.BeginReaderHdl   DEBUG: ^^^ BeginReaderHdl id-path = 4-/junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/4_OEC.root
+SNiPER:NonDLE.BeginReaderHdl   DEBUG: ^^^ BeginReaderHdl id-path = 5-/junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/5_OEC.root
+SNiPER:NonDLE.BeginReaderHdl   DEBUG: ^^^ BeginReaderHdl id-path = 6-/junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/6_OEC.root
+SNiPER:NonDLE.BeginReaderHdl   ERROR: ^^^ file can't open   ^^^
+SNiPER:NonDLE.setAllPath       DEBUG:  -- WindowHandler::setAllPath --- 
+SNiPER:NonDLE.setMinMaxFileId  DEBUG:  -- WindowHandler::setAllPath --- 
+SNiPER:NonDLE.setMinMaxFileId  DEBUG:  -- minFileId = 0 maxFileId = 6 -- 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.BeginReaderHdl   DEBUG: ^^^^^ BeginReaderHdl init ^^^^^
+TagReader:TagReaderMemMgr.initialize DEBUG: --- TagIOSvc TagReaderMemMgr::initialize success ---
+TagReader.initialize            INFO: initialized
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl Handler ^^^
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 0-0-1.54161-1
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 0-1-0.0832032-2
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 0-2-1.6248-3
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 0-3-0.166389-4
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 0-4-1.70798-5
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 1-0-0.249575-6
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 1-1-1.79117-7
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+3-TagSelect:FirstFilterAlg.execute DEBUG: ### Tag path = 0 entryId = 4###
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 2 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 1-2-0.332761-8
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.handle           DEBUG: --- IO fileId = 0 entryId = 4 evtHdl ---
+1-TagSelect:FirstFilterAlg.execute DEBUG: ### Tag path = 1 entryId = 1###
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 1-3-1.87435-9
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler::getWindow -- 
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+3-TagSelect:FirstFilterAlg.execute DEBUG: ### Tag path = 1 entryId = 3###
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 1-4-0.415947-10
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 2-0-1.95754-11
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 2-1-0.499133-12
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+2-TagSelect:FirstFilterAlg.execute DEBUG: ### Tag path = 2 entryId = 0###
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 2-2-2.04073-13
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 2-3-0.582319-14
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+3-TagSelect:FirstFilterAlg.execute DEBUG: ### Tag path = 2 entryId = 2###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 2-4-2.12391-15
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 3-0-0.665505-16
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler fileId = 0 cur_path = /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root-- 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+2-TagSelect:FirstFilterAlg.execute DEBUG: ### Tag path = 2 entryId = 4###
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 3-1-2.2071-17
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 3-2-0.748691-18
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+1-TagSelect:FirstFilterAlg.execute DEBUG: ### Tag path = 3 entryId = 1###
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 3-3-2.29028-19
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.handle           DEBUG: ^^^ BeginReaderHdl fileId-entryId-energy-time: 3-4-0.831877-20
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+3-TagSelect:FirstFilterAlg.execute DEBUG: ### Tag path = 3 entryId = 3###
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push  +++ 
+SNiPER:NonDLE.tagInfo_push     DEBUG: +++ TagInfo_push nullptr  +++ 
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next nullptr+++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next nullptr+++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+SNiPER:NonDLE.tagInfo_next     DEBUG: +++ TagInfo_next nullptr+++ 
+SNiPER:NonDLE.handle           DEBUG: ### TagSelectSvc BeginSelectHdl handle ###
+2-TagSelect.execute             INFO: stop run promtly.
+TagReader.execute               INFO: stop run promtly.
+1-TagSelect.execute             INFO: stop run promtly.
+3-TagSelect.execute             INFO: stop run promtly.
+TagReader:TagReaderMemMgr.finalize DEBUG: --- TagIOSvc TagReaderMemMgr::finalize ---
+2-TagSelect:FirstFilterAlg.finalize  INFO:  FirstFilterAlg time = 10.687
+3-TagSelect:FirstFilterAlg.finalize  INFO:  FirstFilterAlg time = 10.756
+1-TagSelect:FirstFilterAlg.finalize  INFO:  FirstFilterAlg time = 10.752
+TagReader.finalize              INFO: events processed 0
+3-TagSelect:FirstFilterAlg.finalize DEBUG: ### TagSelectSvc finalized ###
+2-TagSelect:FirstFilterAlg.finalize DEBUG: ### TagSelectSvc finalized ###
+1-TagSelect:FirstFilterAlg.finalize DEBUG: ### TagSelectSvc finalized ###
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+SNiPER:NonDLE.setTagInfoOver   DEBUG: +++ set Over tagInfo  step= 2+++
+1-TagSelect.finalize            INFO: events processed 6
+2-TagSelect.finalize            INFO: events processed 6
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+3-TagSelect.finalize            INFO: events processed 8
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+SNiPER:NavTreeHandle.open      DEBUG: Getting nav tree from /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 0 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 0 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 4
+SNiPER:NavInputStream.next     DEBUG: Move forward for 4 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 4 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root file entry: 4)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 4 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler cur share count = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler previous events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 0 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 3
+SNiPER:NavInputStream.prev     ERROR: Move forward for 1step(s)
+SNiPER:NavInputStream.prev     DEBUG: Now at stream entry 3 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root file entry: 3)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 3 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 0 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 2
+SNiPER:NavInputStream.prev     ERROR: Move forward for 1step(s)
+SNiPER:NavInputStream.prev     DEBUG: Now at stream entry 2 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root file entry: 2)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 2 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 0 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 5
+SNiPER:NavInputStream.next     DEBUG: Move forward for 3 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 5 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root file entry: 5)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 5 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 0 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 6
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 6 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root file entry: 6)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 6 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back = +++
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 2 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: --- IO fileId = 1 entryId = 1 evtHdl ---
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler::getWindow -- 
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler fileId = 1 cur_path = /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root-- 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG: !!! end !!!
+SNiPER:NonDLE.handle           DEBUG: !!! curId = 1 !!!
+1-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  buffer size = 3 !!!
+1-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  task energy = 1.70798 !!!
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output after pop+++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = -1 +++
+SNiPER:NavTreeHandle.open      DEBUG: Getting nav tree from /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 0 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 1
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 1 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root file entry: 1)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 1 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler cur share count = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler previous events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 0
+SNiPER:NavInputStream.prev     ERROR: Move forward for 1step(s)
+SNiPER:NavInputStream.prev     DEBUG: Now at stream entry 0 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root file entry: 0)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 0 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre share count = 2-- 
+SNiPER:NonDLE.searchStream     DEBUG:  -- TagIOSvc WindowHandler searchStream find --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 999
+SNiPER:NavInputStream.next     DEBUG: Move forward for 993 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 999 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root file entry: 999)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 999 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 2
+SNiPER:NavInputStream.next     DEBUG: Move forward for 2 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 2 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root file entry: 2)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 2 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 3
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 3 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root file entry: 3)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 3 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back = +++
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 2 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: --- IO fileId = 1 entryId = 3 evtHdl ---
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler::getWindow -- 
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.searchStream     DEBUG:  -- TagIOSvc WindowHandler searchStream find --
+SNiPER:NonDLE.handle           DEBUG: !!! end !!!
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.handle           DEBUG: !!! curId = 1 !!!
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 3
+2-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  buffer size = 3 !!!
+2-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  task energy = 2.67619 !!!
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler cur share count = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler previous events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav find fileId = 1 entryId = 2-- 
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre share count = 5-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav find fileId = 1 entryId = 1-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 4
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 4 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root file entry: 4)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output after pop+++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = -1 +++
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 4 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 5
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 5 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root file entry: 5)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 5 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back = +++
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 2 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: --- IO fileId = 2 entryId = 0 evtHdl ---
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler::getWindow -- 
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 3!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NavTreeHandle.leave     DEBUG: Leaving /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/0_OEC.root for nav tree
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG: !!! end !!!
+SNiPER:NonDLE.handle           DEBUG: !!! curId = 1 !!!
+3-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  buffer size = 3 !!!
+3-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  task energy = 2.75938 !!!
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler fileId = 2 cur_path = /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root-- 
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output after pop+++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = -1 +++
+SNiPER:NavTreeHandle.open      DEBUG: Getting nav tree from /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 0 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 0
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler cur share count = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler previous events-- 
+SNiPER:NonDLE.searchStream     DEBUG:  -- TagIOSvc WindowHandler searchStream find --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 999
+SNiPER:NavInputStream.next     DEBUG: Move forward for 994 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 999 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root file entry: 999)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 999 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 998
+SNiPER:NavInputStream.prev     ERROR: Move forward for 1step(s)
+SNiPER:NavInputStream.prev     DEBUG: Now at stream entry 998 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root file entry: 998)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 998 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 1
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 1 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root file entry: 1)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 1 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 2
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 2 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root file entry: 2)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 2 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back = +++
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 2 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: --- IO fileId = 2 entryId = 2 evtHdl ---
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler::getWindow -- 
+SNiPER:NonDLE.searchStream     DEBUG:  -- TagIOSvc WindowHandler searchStream find --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 2
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler cur share count = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler previous events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav find fileId = 2 entryId = 1-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre share count = 4-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav find fileId = 2 entryId = 0-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 3
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 3 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root file entry: 3)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 3 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 4
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 4 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root file entry: 4)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 4 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 4!!! 
+SNiPER:NonDLE.handle           DEBUG: !!! end !!!
+SNiPER:NonDLE.handle           DEBUG: !!! curId = 1 !!!
+1-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  buffer size = 3 !!!
+1-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  task energy = 0.727588 !!!
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output after pop+++
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back = +++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = 0 +++
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 2 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.handle           DEBUG: --- IO fileId = 2 entryId = 4 evtHdl ---
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler::getWindow -- 
+SNiPER:NavTreeHandle.leave     DEBUG: Leaving /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/1_OEC.root for nav tree
+SNiPER:NonDLE.searchStream     DEBUG:  -- TagIOSvc WindowHandler searchStream find --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 4
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler cur share count = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler previous events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 3!!! 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav find fileId = 2 entryId = 3-- 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre Add-- 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 3!!! 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre share count = 4-- 
+SNiPER:NonDLE.handle           DEBUG: !!! end !!!
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.handle           DEBUG: !!! curId = 1 !!!
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav find fileId = 2 entryId = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back events-- 
+2-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  buffer size = 3 !!!
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 5
+2-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  task energy = 0.810773 !!!
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 5 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root file entry: 5)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 5 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output after pop+++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = -1 +++
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 6
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 6 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root file entry: 6)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 6 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back = +++
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 2 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: --- IO fileId = 3 entryId = 1 evtHdl ---
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler::getWindow -- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler fileId = 3 cur_path = /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root-- 
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 3!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG: !!! end !!!
+SNiPER:NonDLE.handle           DEBUG: !!! curId = 1 !!!
+3-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  buffer size = 3 !!!
+3-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  task energy = 0.893959 !!!
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output after pop+++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = -1 +++
+SNiPER:NavTreeHandle.open      DEBUG: Getting nav tree from /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 0 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 1
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 1 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root file entry: 1)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 1 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler cur share count = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler previous events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 0
+SNiPER:NavInputStream.prev     ERROR: Move forward for 1step(s)
+SNiPER:NavInputStream.prev     DEBUG: Now at stream entry 0 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root file entry: 0)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 0 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre share count = 2-- 
+SNiPER:NonDLE.searchStream     DEBUG:  -- TagIOSvc WindowHandler searchStream find --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 999
+SNiPER:NavInputStream.next     DEBUG: Move forward for 993 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 999 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root file entry: 999)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 999 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 2
+SNiPER:NavInputStream.next     DEBUG: Move forward for 2 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 2 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root file entry: 2)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 2 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back share count = 2-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 3
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 3 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root file entry: 3)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 3 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back = +++
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 2 evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: --- IO fileId = 3 entryId = 3 evtHdl ---
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler::getWindow -- 
+SNiPER:NonDLE.searchStream     DEBUG:  -- TagIOSvc WindowHandler searchStream find --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 3
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler cur share count = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler previous events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav find fileId = 3 entryId = 2-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler pre share count = 4-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav find fileId = 3 entryId = 1-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back events-- 
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 4
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 4 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root file entry: 4)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 4!!! 
+SNiPER:NonDLE.handle           DEBUG: !!! end !!!
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 4 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.handle           DEBUG: !!! curId = 1 !!!
+1-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  buffer size = 3 !!!
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back Add-- 
+SNiPER:NonDLE.getWindow        DEBUG:  -- TagIOSvc WindowHandler back share count = 2-- 
+1-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  task energy = 1.86217 !!!
+SNiPER:NonDLE.searchNav        DEBUG:  -- TagIOSvc WindowHandler::searchNav m_pre_idDeque size = 3 --
+SNiPER:NavInputStream.setEntry DEBUG: Set entry to 5
+SNiPER:NavInputStream.next     DEBUG: Move forward for 1 step(s)
+SNiPER:NavInputStream.next     DEBUG: Now at stream entry 5 (file: /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root file entry: 5)
+SNiPER:NavTreeHandle.setAddr   DEBUG: setAddr(0) for nav in /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore -1+++
+SNiPER:NavInputStream.read     DEBUG: Read EvtNavigator at entry 5 from file /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output after pop+++
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back = +++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = 0 +++
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO state = 3 evtHdl ---
+SNiPER:NonDLE.tagInfo_popDone  DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop  +++ 
+SNiPER:NonDLE.tagInfo_pop      DEBUG: +++ TagInfo_pop nullptr +++ 
+SNiPER:NonDLE.handle           DEBUG: --- IO tagInfo_pop  nullptr ---
+SNiPER:NonDLE.handle           DEBUG: --- IO finish evtHdl ---
+SNiPER:NonDLE.handle           DEBUG: --- push back nullptr ---
+SNiPER:NonDLE.push_back        DEBUG: +++ GlobalBuffer::push_back m_end->next->stat = -1 +++
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.push_back        DEBUG: +++ Window  ref push back nullptr +++
+SNiPER:NonDLE.~WindowHandler   DEBUG:  -- WindowHandler release --- 
+SNiPER:NavTreeHandle.leave     DEBUG: Leaving /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/2_OEC.root for nav tree
+SNiPER:NavTreeHandle.leave     DEBUG: Leaving /junofs/users/liuyan2016/OEC/oec-prototype/Tag/DataGen/share/3_OEC.root for nav tree
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 2!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 1!!! 
+SNiPER:NonDLE.handle           DEBUG:  !!! TagIOSvc TagAnaSvc share count = 1!!! 
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.handle           DEBUG: !!! end !!!
+SNiPER:NonDLE.handle           DEBUG: !!! curId = 1 !!!
+2-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  buffer size = 3 !!!
+2-TagAna:TagAnaEvent.execute   DEBUG: !!! TagAnaEvent  task energy = 1.94536 !!!
+SNiPER:NonDLE.next             DEBUG: +++ Window ref nextBefore 0+++
+SNiPER:NonDLE.handle           DEBUG: !!! begin !!!
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output after pop+++
+TagWriter:GBufPopAlg.execute   DEBUG: +++Output before pop  +++
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front m_begin->stat = 0 +++
+1-TagAna.execute                INFO: stop run promtly.
+3-TagAna.execute                INFO: stop run promtly.
+TagIO.execute                   INFO: stop run promtly.
+2-TagAna.execute                INFO: stop run promtly.
+TagIO:TagIOMemMgr.finalize     DEBUG: --- TagIOSvc TagIOMemMgr::finalize ---
+TagIO.finalize                  INFO: events processed 0
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+SNiPER:NonDLE.setOver          DEBUG: +++ set Over step= 2+++
+3-TagAna:TagAnaEvent.finalize   INFO:  TagAnaEvent time = 474.033
+SNiPER:NonDLE.pop_front        DEBUG: +++ GlobalBuffer::pop_front finish +++
+2-TagAna:TagAnaEvent.finalize   INFO:  TagAnaEvent time = 474.034
+3-TagAna:TagAnaEvent.finalize  DEBUG: !!! TagAnaEvent TagAnaEventfinalized successfully !!!
+1-TagAna:TagAnaEvent.finalize   INFO:  TagAnaEvent time = 474.036
+2-TagAna:TagAnaEvent.finalize  DEBUG: !!! TagAnaEvent TagAnaEventfinalized successfully !!!
+1-TagAna:TagAnaEvent.finalize  DEBUG: !!! TagAnaEvent TagAnaEventfinalized successfully !!!
+TagWriter.execute               INFO: stop run promtly.
+2-TagAna:TagWinMemMgr.finalize DEBUG: --- TagIOSvc TagWinMemMgr::finalize ---
+TagWriter.finalize              INFO: events processed 8
+1-TagAna:TagWinMemMgr.finalize DEBUG: --- TagIOSvc TagWinMemMgr::finalize ---
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+3-TagAna:TagWinMemMgr.finalize DEBUG: --- TagIOSvc TagWinMemMgr::finalize ---
+GEvtStream.~GlobalStream       DEBUG: !!! ~GlobalStream !!!
+SNiPER:Muster.~Muster          DEBUG: release ~Muster
+SNiPER:Muster.~Muster          DEBUG: releasing all One  Muster Tasks
+2-TagAna.finalize               INFO: events processed 3
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+1-TagAna.finalize               INFO: events processed 3
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+3-TagAna.finalize               INFO: events processed 2
+SNiPER:NonDLE.run              DEBUG: ~~~ finish task ~~~
+SNiPER:Muster.~Muster          DEBUG: releasing all Two Muster Tasks
+
+**************************************************
+Terminating @ lxslc714.ihep.ac.cn on Wed Mar 17 16:52:46 2021
+SNiPER::Context Running Mode = { 6-Threads }
+SNiPER::Context Terminated Successfully
+

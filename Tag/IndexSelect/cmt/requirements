@@ -1,0 +1,25 @@
+package IndexSelect
+
+use SniperKernel v*
+
+use EDMUtil v* DataModel
+use EvtNavigator v* DataModel
+use BaseEvent v* DataModel
+use InputReviser v* Utilities
+use JunoTimer v* Utilities
+ 
+use CalibEvent v* DataModel
+use BufferMemMgr v* CommonSvc
+
+use OECEvent v*
+
+use ROOT v* Externals
+use TagInfo v* Tag
+
+use SniperMuster v* Tag
+
+library  IndexSelect  *.cc
+
+apply_pattern install_python_modules
+apply_pattern install_more_includes more=IndexSelect
+apply_pattern linker_library library=IndexSelect

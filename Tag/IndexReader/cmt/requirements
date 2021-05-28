@@ -1,0 +1,14 @@
+package IndexReader
+
+use SniperKernel   v*
+use SniperMuster   v* Tag
+#use EvtNavigator v* DataModel
+use RootIOSvc v* RootIO
+#use BufferMemMgr v* CommonSvc
+use TagInfo v* Tag
+
+library IndexReader *.cc
+
+apply_pattern install_python_modules
+apply_pattern install_more_includes more=IndexReader
+apply_pattern linker_library library=IndexReader

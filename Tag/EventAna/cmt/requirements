@@ -1,0 +1,19 @@
+package EventAna
+
+use SniperKernel v*
+
+use EvtNavigator v* DataModel
+use BufferMemMgr v* CommonSvc
+
+use OECEvent v*
+use ROOT v* Externals
+use JunoTimer v* Utilities
+
+use SniperMuster v* Tag
+use IndexEventIO v* Tag
+
+library  EventAna  *.cc
+
+apply_pattern install_python_modules
+apply_pattern install_more_includes more=EventAna
+apply_pattern linker_library library=EventAna

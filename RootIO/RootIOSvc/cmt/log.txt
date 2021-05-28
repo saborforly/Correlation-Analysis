@@ -1,0 +1,124 @@
+('sel', 3)
+('ana', 3)
+**************************************************
+***          Welcome to SNiPER Python          ***
+**************************************************
+Running @ lxslc714.ihep.ac.cn on Wed Mar 17 16:55:48 2021
+[Task]1-TagSelect
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[SelectInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[SelectMemMgr]SelectMemMgr
+   |     +--[Var]LogLevel   = 3
+   +--[FirstFilterAlg]FirstFilterAlg
+   |     +--[Var]LogLevel   = 3
+[Task]2-TagSelect
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[SelectInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[SelectMemMgr]SelectMemMgr
+   |     +--[Var]LogLevel   = 3
+   +--[FirstFilterAlg]FirstFilterAlg
+   |     +--[Var]LogLevel   = 3
+[Task]3-TagSelect
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[SelectInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[SelectMemMgr]SelectMemMgr
+   |     +--[Var]LogLevel   = 3
+   +--[FirstFilterAlg]FirstFilterAlg
+   |     +--[Var]LogLevel   = 3
+[Task]1-TagAna
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagWinMemMgr]TagWinMemMgr
+   |     +--[Var]LogLevel   = 3
+   +--[WinInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[WinOutputSvc]OutputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagAnaEvent]TagAnaEvent
+   |     +--[Var]LogLevel   = 3
+[Task]2-TagAna
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagWinMemMgr]TagWinMemMgr
+   |     +--[Var]LogLevel   = 3
+   +--[WinInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[WinOutputSvc]OutputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagAnaEvent]TagAnaEvent
+   |     +--[Var]LogLevel   = 3
+[Task]3-TagAna
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagWinMemMgr]TagWinMemMgr
+   |     +--[Var]LogLevel   = 3
+   +--[WinInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[WinOutputSvc]OutputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagAnaEvent]TagAnaEvent
+   |     +--[Var]LogLevel   = 3
+[Task]TagReader
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagReaderMemMgr]TagReaderMemMgr
+   |     +--[Var]LogLevel   = 3
+   |     +--[Var]pathFile   = /hpcfs/juno/junogpu/liuyan2016/cor-ana/Tag/DataGen/fileId.txt
+   |     +--[Var]tagFile    = /hpcfs/juno/junogpu/liuyan2016/cor-ana/Tag/DataGen/tag.txt
+[Task]TagIO
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagIOMemMgr]TagIOMemMgr
+   |     +--[Var]LogLevel   = 3
+   |     +--[Var]TimeWindow = [-1.1, 1.1]
+TagWriter.initialize            INFO: initialized
+1-TagSelect.initialize          INFO: initialized
+2-TagSelect.initialize          INFO: initialized
+3-TagSelect.initialize          INFO: initialized
+SNiPER:NonDLE.BeginIOHdl        INFO: --- IO init evtHdl ---
+1-TagAna.initialize             INFO: initialized
+3-TagAna.initialize             INFO: initialized
+TagIO.initialize                INFO: initialized
+2-TagAna.initialize             INFO: initialized
+SNiPER:NonDLE.BeginReaderHdl   ERROR: ^^^ file can't open   ^^^
+TagReader.initialize            INFO: initialized
+TagReader.execute               INFO: stop run promtly.
+2-TagSelect.execute             INFO: stop run promtly.
+1-TagSelect.execute             INFO: stop run promtly.
+3-TagSelect.execute             INFO: stop run promtly.
+3-TagSelect:FirstFilterAlg.finalize  INFO:  FirstFilterAlg time = 361775
+1-TagSelect:FirstFilterAlg.finalize  INFO:  FirstFilterAlg time = 361775
+2-TagSelect:FirstFilterAlg.finalize  INFO:  FirstFilterAlg time = 361775
+2-TagSelect.finalize            INFO: events processed 166154
+1-TagSelect.finalize            INFO: events processed 166568
+TagReader.finalize              INFO: events processed 0
+3-TagSelect.finalize            INFO: events processed 167278
+1-TagAna.execute                INFO: stop run promtly.
+1-TagAna:TagAnaEvent.finalize   INFO:  TagAnaEvent time = 361825
+TagIO.execute                   INFO: stop run promtly.
+TagIO.finalize                  INFO: events processed 0
+TagWriter.execute               INFO: stop run promtly.
+TagWriter.finalize              INFO: events processed 216665
+1-TagAna.finalize               INFO: events processed 72356

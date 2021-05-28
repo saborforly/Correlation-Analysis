@@ -1,0 +1,20 @@
+package TagInfo
+
+use SniperKernel v*
+use ROOT v* Externals
+use EDMUtil v* DataModel
+
+macro TagInfo_cintflags " -I$(TAGINFOROOT) "
+macro_append TagInfo_cintflags " -I$(BASEEVENTROOT) "
+macro_append TagInfo_cintflags " -I$(EDMUTILROOT) "
+
+macro_append Tag_cintflags " $(TagInfo_cintflags) "
+
+apply_pattern cint_dictionary files="../Event/Tag.h"
+
+include_dirs $(TAGINFOROOT)/
+include_dirs $(TAGINFOROOT)/Event
+library TagInfo *.cc
+apply_pattern linker_library library=TagInfo
+
+apply_pattern install_more_includes more=Event

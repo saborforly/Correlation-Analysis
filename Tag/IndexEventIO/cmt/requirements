@@ -1,0 +1,15 @@
+package IndexEventIO
+
+use SniperKernel   v*
+use SniperMuster   v* Tag
+#use EvtNavigator v* DataModel
+use RootIOSvc v* RootIO
+#use BufferMemMgr v* CommonSvc
+use TagInfo v* Tag
+use JunoTimer v* Utilities
+
+library IndexEventIO *.cc
+
+apply_pattern install_python_modules
+apply_pattern install_more_includes more=IndexEventIO
+apply_pattern linker_library library=IndexEventIO

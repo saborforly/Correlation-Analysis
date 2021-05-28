@@ -1,0 +1,16 @@
+package DataGen
+
+use SniperKernel   v*
+use EvtNavigator v* DataModel
+use RootIOSvc v* RootIO
+use OECEvent v*
+use ROOT v* Externals
+use JunoTimer v* Utilities
+use SimEventV2 v* DataModel
+
+use IBDEvent v* Tag
+
+library DataGen *.cc
+apply_pattern install_python_modules
+apply_pattern install_more_includes more=DataGen
+apply_pattern linker_library library=DataGen
