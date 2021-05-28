@@ -1,0 +1,75 @@
+('sel', 1)
+('ana', 1)
+**************************************************
+***          Welcome to SNiPER Python          ***
+**************************************************
+Running @ gpu019.ihep.ac.cn on Fri Mar 19 16:01:47 2021
+[Task]1-TagAna
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagWinMemMgr]TagWinMemMgr
+   |     +--[Var]LogLevel   = 3
+   +--[WinInputSvc]InputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[WinOutputSvc]OutputSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagAnaEvent]TagAnaEvent
+   |     +--[Var]LogLevel   = 3
+[Task]TagIO
+   +--[Var]EvtMax     = -1
+   +--[Var]LogLevel   = 3
+   +--[DataMemSvc]DataMemSvc
+   |     +--[Var]LogLevel   = 3
+   +--[TagIOMemMgr]TagIOMemMgr
+   |     +--[Var]LogLevel   = 3
+   |     +--[Var]TimeWindow = [-1.1, 10]
+   |     +--[Var]pathFile   = /hpcfs/juno/junogpu/liuyan2016/cor-ana/Tag/DataGen/fileId.txt
+   |     +--[Var]tagFile    = /hpcfs/juno/junogpu/liuyan2016/cor-ana/Tag/DataGen/tag.txt
+TagWriter.initialize            INFO: initialized
+1-TagAna.initialize             INFO: initialized
+SNiPER:NonDLE.BeginReadIOHdl    INFO: --- IO init evtHdl ---
+TagIO.initialize                INFO: initialized
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for OECEvent.h
+   requested to autoload type JM::OECEvent
+Error in cling::AutoloadingVisitor::InsertIntoAutoloadingState:
+   Missing FileEntry for OECHeader.h
+   requested to autoload type JM::OECHeader
+TagIO.execute                   INFO: stop run promtly.
+1-TagAna.execute                INFO: stop run promtly.
+TagIO.finalize                  INFO: events processed 0
+1-TagAna:TagAnaEvent.finalize   INFO:  TagAnaEvent time = 4537.17
+1-TagAna.finalize               INFO: events processed 25000
+TagWriter.execute               INFO: stop run promtly.
+TagWriter.finalize              INFO: events processed 25000
+
+**************************************************
+Terminating @ gpu019.ihep.ac.cn on Fri Mar 19 16:01:55 2021
+SNiPER::Context Running Mode = { 1-Threads }
+SNiPER::Context Terminated Successfully
+
+	Command being timed: "python /hpcfs/juno/junogpu/liuyan2016/cor-ana/Tag/run_mtana.py"
+	User time (seconds): 7.32
+	System time (seconds): 1.60
+	Percent of CPU this job got: 108%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 213652
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3042
+	Minor (reclaiming a frame) page faults: 86852
+	Voluntary context switches: 112707
+	Involuntary context switches: 55
+	Swaps: 0
+	File system inputs: 696096
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
