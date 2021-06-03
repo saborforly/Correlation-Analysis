@@ -1,7 +1,7 @@
 # 关联数据分析
 
-根据挑选后的 Index 数据加载分析时间窗口内的物理事例，通过减少数据读入提高关联事例分析的效率。输入为Index文件，输出为挑选后的关联数据。数据的处理流程如下图所示：
-![](https://github.com/saborforly/Correlation-Analysis/blob/main/image/aam.png)
+根据挑选后的 Index 数据加载分析时间窗口内的物理事例，通过减少数据读入提高关联事例分析的效率。输入为Index文件，输出为挑选后的关联数据。数据的处理流程如下图所示：  
+![image](https://github.com/saborforly/Correlation-Analysis/blob/main/image/aam.png)
 ### 系统环境
 offline version: J20v1r0-Pre2
 
@@ -28,10 +28,10 @@ popd
 
 
 ### 0.管理多线程和全局缓存
-SniperMuster主要负责线程的创建、调度和执行以及全局缓存中缓存区的定义，主要涉及的类如图所示
-![](https://github.com/saborforly/Correlation-Analysis/blob/main/image/sniperMuster.png)
-* GlobalBuffer类主要负责的是全局缓存，主要包括两个链表：索引数据链表和窗口事例数据链表，各个线程都可以通过锁和状态量从全局缓存中获取数据和写入数据。在链表的实现中，为链表中的节点都设置了状态，状态的值代表着数据处理所处于的阶段
-![](https://github.com/saborforly/Correlation-Analysis/blob/main/image/linkNode.png)
+SniperMuster主要负责线程的创建、调度和执行以及全局缓存中缓存区的定义，主要涉及的类如图所示:  
+![image](https://github.com/saborforly/Correlation-Analysis/blob/main/image/sniperMuster.png)
+* GlobalBuffer类主要负责的是全局缓存，主要包括两个链表：索引数据链表和窗口事例数据链表，各个线程都可以通过锁和状态量从全局缓存中获取数据和写入数据。在链表的实现中，为链表中的节点都设置了状态，状态的值代表着数据处理所处于的阶段  
+![image](https://github.com/saborforly/Correlation-Analysis/blob/main/image/linkNode.png)
 
 * ThreadAssistor类主要负责Sniper Task的初始化、执行和结束。
 * TaskSupervisor 主要涉及到多线程的调度，例如事例挑选多线程和关联事例分析多线程
